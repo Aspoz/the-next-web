@@ -49,7 +49,7 @@ func faculteit (number: Int) -> Int
 ```ruby
 def faculteit n
   x = 1
-  n.times { |i| x *= (i + 1) }
+  (1..n).each { |i| x *= i }
   n == 0 ? n : x
 end
 
