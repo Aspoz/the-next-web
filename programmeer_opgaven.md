@@ -33,7 +33,22 @@ func reverse (toReverse: [Int]) -> [Int]
 ## Minimum en maximum
 Maak een functie die uit een lijst van getallen het grootste en kleinste getal teruggeeft
 
-func minAndMax (numbers: [Int]) -> (min: Int, max: Int) 
+func minAndMax (numbers: [Int]) -> (min: Int, max: Int)
+
+```ruby
+numbers = [4,7,1,3,8,6,9,2]
+
+def min_max a_n
+  min=max=a_n.shift
+  a_n.each do |n|
+    min = n if n<min
+    max = n if n>max
+  end
+  [min,max]
+end
+
+puts min_max numbers
+```
 
 ## Faculteit
 Faculteit is in de wiskunde in begrip dat gebruikt wordt als volgt: 
