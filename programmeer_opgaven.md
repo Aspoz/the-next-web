@@ -22,6 +22,7 @@ end
 
 ## Valuta converter
 Maak een functie die een bedrag van euros omzet naar dollars
+
 func euroToDollars (euros: Float) -> Float
 
 ## Omdraaien
@@ -48,9 +49,8 @@ func faculteit (number: Int) -> Int
 
 ```ruby
 def faculteit n
-  x = 1
-  (1..n).each { |i| x *= i }
-  n == 0 ? n : x
+  return 1 if n==0 || n==1
+  n * faculteit(n-1)
 end
 
 puts faculteit 5
