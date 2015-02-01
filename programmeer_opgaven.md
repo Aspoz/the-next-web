@@ -4,15 +4,21 @@
 
 Oefenen met functies:
 
-
 ## Les 1
 
 ## Fizzbuzz
 Dit zou als een test kunnen worden gebruikt, als je dit niet binnen 5 minuten kunt oplossen in een programmeertaal naar keuze, dan niet geschikt voor app programmeren. 
 
-
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
+```ruby
+(1..100).each do |i|
+  x = ''
+  x << 'Fizz' if i%3==0
+  x << 'Buzz' if i%5==0
+  puts x=='' ? i : x
+end
+```
 
 ## Valuta converter
 Maak een functie die een bedrag van euros omzet naar dollars
@@ -39,4 +45,3 @@ Faculteit is in de wiskunde in begrip dat gebruikt wordt als volgt:
 
 Maak een functie faculteit
 func faculteit (number: Int) -> Int
-
