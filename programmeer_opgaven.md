@@ -45,3 +45,13 @@ Faculteit is in de wiskunde in begrip dat gebruikt wordt als volgt:
 
 Maak een functie faculteit
 func faculteit (number: Int) -> Int
+
+```ruby
+def faculteit n
+  x = 1
+  n.times { |i| x *= (i + 1) }
+  n == 0 ? n : x
+end
+
+puts faculteit 5
+```
