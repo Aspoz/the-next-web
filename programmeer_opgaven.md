@@ -39,10 +39,10 @@ func minAndMax (numbers: [Int]) -> (min: Int, max: Int)
 numbers = [4,7,1,3,8,6,9,2]
 
 def min_max a_n
-  min=max=a_n.shift
+  min=max=a_n.[0]
   a_n.each do |n|
-    min = n if n<min
-    max = n if n>max
+    min = n if n < min
+    max = n if n > max
   end
   [min,max]
 end
