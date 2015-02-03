@@ -30,6 +30,18 @@ Maak een functie die de inhoud van een array omdraait
 
 func reverse (toReverse: [Int]) -> [Int]
 
+```ruby
+numbers = [4,7,1,3,8,6,9,2]
+
+def reverse a
+  return a if a.size < 2
+  reverse(a.drop(1)) + a.first(1)
+end
+
+p numbers
+p reverse numbers
+```
+
 ## Minimum en maximum
 Maak een functie die uit een lijst van getallen het grootste en kleinste getal teruggeeft
 
