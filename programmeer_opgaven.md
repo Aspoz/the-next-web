@@ -76,7 +76,7 @@ func faculteit (number: Int) -> Int
 
 ```ruby
 def faculteit n
-  return n if n==0 || n==1
+  return n if n < 2
   n * faculteit(n-1)
 end
 
