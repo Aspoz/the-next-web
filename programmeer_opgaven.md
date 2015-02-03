@@ -25,6 +25,12 @@ Maak een functie die een bedrag van euros omzet naar dollars
 
 func euroToDollars (euros: Float) -> Float
 
+```ruby
+def euro_to_dollar e
+  e * 1.135
+end
+```
+
 ## Omdraaien
 Maak een functie die de inhoud van een array omdraait 
 
