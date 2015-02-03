@@ -21,9 +21,9 @@ end
 ```
 
 ## Valuta converter
-Maak een functie die een bedrag van euros omzet naar dollars
+Maak een functie die een bedrag van euros omzet naar dollars.
 
-func euroToDollars (euros: Float) -> Float
+`func euroToDollars (euros: Float) -> Float`
 
 ```ruby
 def euro_to_dollar e
@@ -32,9 +32,9 @@ end
 ```
 
 ## Omdraaien
-Maak een functie die de inhoud van een array omdraait 
+Maak een functie die de inhoud van een array omdraait.
 
-func reverse (toReverse: [Int]) -> [Int]
+`func reverse (toReverse: [Int]) -> [Int]`
 
 ```ruby
 numbers = [4,7,1,3,8,6,9,2]
@@ -49,15 +49,15 @@ p reverse numbers
 ```
 
 ## Minimum en maximum
-Maak een functie die uit een lijst van getallen het grootste en kleinste getal teruggeeft
+Maak een functie die uit een lijst van getallen het grootste en kleinste getal teruggeeft.
 
-func minAndMax (numbers: [Int]) -> (min: Int, max: Int)
+`func minAndMax (numbers: [Int]) -> (min: Int, max: Int)`
 
 ```ruby
 numbers = [4,7,1,3,8,6,9,2]
 
 def min_max a_n
-  min=max=a_n.[0]
+  min=max=a_n[0]
   a_n.each do |n|
     min = n if n < min
     max = n if n > max
@@ -77,8 +77,9 @@ Faculteit is in de wiskunde in begrip dat gebruikt wordt als volgt:
 - De faculteit van 4 is 4 * 3 * 2 * 1 = 24
 - De faculteit van 5 is 5 * 4 * 3 * 2 * 1 = 120
 
-Maak een functie faculteit
-func faculteit (number: Int) -> Int
+Maak een functie faculteit.
+
+`func faculteit (number: Int) -> Int`
 
 ```ruby
 def faculteit n
